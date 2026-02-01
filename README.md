@@ -27,5 +27,3 @@ Model, gerçek ilaçları (Donepezil) potansiyel olmayan moleküllerden (Paracet
 * **Scikit-learn** (Makine Öğrenmesi Algoritmaları)
 * **Pandas & NumPy** (Veri Analizi)
 
----
-*Bu proje, Tübitak ve akademik çalışmalar kapsamında Biyoinformatik alanındaki yetkinlikleri geliştirmek amacıyla hazırlanmıştır.*
