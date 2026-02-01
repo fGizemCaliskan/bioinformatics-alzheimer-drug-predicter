@@ -11,7 +11,7 @@ Bu proje, Alzheimer hastalığının tedavisinde kritik bir hedef olan **Asetilk
 3.  **Model Eğitimi:** **Random Forest Regresyon** algoritması kullanılarak moleküler yapı ile biyolojik aktivite arasındaki ilişki modellendi.
 
 ## 📊 Performans ve Sonuçlar
-Geliştirilen model test verileri üzerinde **0.75 R² Skoru** (%75 Başarı) elde etmiştir.
+Geliştirilen model test verileri üzerinde **0.76 R² Skoru** (%76 Başarı) elde etmiştir.
 <img width="884" height="684" alt="doğruluk grafiği" src="https://github.com/user-attachments/assets/f701308d-aab8-43cd-88e2-4d41017dbb27" />
 
 
