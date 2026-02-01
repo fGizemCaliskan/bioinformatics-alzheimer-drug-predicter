@@ -12,6 +12,8 @@ Bu proje, Alzheimer hastalığının tedavisinde kritik bir hedef olan **Asetilk
 
 ## 📊 Performans ve Sonuçlar
 Geliştirilen model test verileri üzerinde **0.75 R² Skoru** (%75 Başarı) elde etmiştir.
+<img width="884" height="684" alt="doğruluk grafiği" src="https://github.com/user-attachments/assets/f701308d-aab8-43cd-88e2-4d41017dbb27" />
+
 
 **Modelin Gerçek Hayat Testi:**
 | Molekül Adı | Tür | Model Tahmini | Sonuç |
