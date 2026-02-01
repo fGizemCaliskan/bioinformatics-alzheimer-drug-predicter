@@ -1,21 +1,31 @@
-# 🧬 Alzheimer's Drug Discovery with Machine Learning
+# 🧬 Makine Öğrenmesi ile Alzheimer İlaç Keşfi (QSAR Modeli)
 
-This project employs Machine Learning (Random Forest) to predict the bioactivity of chemical compounds targeting the **Acetylcholinesterase (AChE)** enzyme, a key target for Alzheimer's disease treatment.
+Bu proje, Alzheimer hastalığının tedavisinde kritik bir hedef olan **Asetilkolinesteraz (AChE)** enzimi üzerinde etkili olabilecek ilaç adaylarını tespit etmek amacıyla geliştirilmiş bir Yapay Zeka modelidir.
 
-## 🚀 Project Overview
-- **Goal:** Predict the **pIC50** value (potency) of a molecule based on its chemical structure.
-- **Data Source:** ChEMBL Database (Bioactivity data for AChE).
-- **Algorithm:** Random Forest Regressor.
-- **Descriptors:** Morgan Fingerprints (ECFP4) generated via RDKit.
+## 🚀 Proje Özeti
+İlaç keşif süreçleri (Drug Discovery) oldukça maliyetli ve uzun zaman alan süreçlerdir. Bu projede, **Biyoinformatik** ve **Makine Öğrenmesi** teknikleri birleştirilerek, moleküllerin laboratuvara girmeden bilgisayar ortamında taranması ve biyolojik aktivitelerinin (**pIC50** değerlerinin) tahmin edilmesi sağlanmıştır.
 
-## 📊 Performance
-The model achieved an **R² score of 0.75**, successfully distinguishing between active Alzheimer's drugs (e.g., Donepezil) and inactive compounds.
+## ⚙️ Nasıl Çalışır?
+1.  **Veri Toplama:** ChEMBL veritabanından AChE enzimini inhibe eden binlerce molekülün verisi çekildi.
+2.  **Öznitelik Çıkarımı:** Moleküllerin kimyasal formülleri (**SMILES** kodları), **RDKit** kütüphanesi kullanılarak bilgisayarın anlayabileceği sayısal verilere (Morgan Parmak İzleri) dönüştürüldü.
+3.  **Model Eğitimi:** **Random Forest Regresyon** algoritması kullanılarak moleküler yapı ile biyolojik aktivite arasındaki ilişki modellendi.
 
-## 🛠️ Technologies Used
-- Python
-- RDKit (Cheminformatics)
-- Scikit-learn (Machine Learning)
-- Pandas & Matplotlib
+## 📊 Performans ve Sonuçlar
+Geliştirilen model test verileri üzerinde **0.75 R² Skoru** (%75 Başarı) elde etmiştir.
 
-## 👨‍💻 How to Run
-Click the "Open in Colab" badge above to run the notebook directly in your browser.
+**Modelin Gerçek Hayat Testi:**
+| Molekül Adı | Tür | Model Tahmini | Sonuç |
+| :--- | :--- | :--- | :--- |
+| **Donepezil** | Gerçek Alzheimer İlacı | **6.12 (Yüksek)** | ✅ Başarılı |
+| **Paracetamol** | Ağrı Kesici (Alakasız) | **4.11 (Düşük)** | ✅ Başarılı |
+
+Model, gerçek ilaçları (Donepezil) potansiyel olmayan moleküllerden (Paracetamol) başarıyla ayırt edebilmektedir.
+
+## 🛠️ Kullanılan Teknolojiler
+* **Python** (Programlama Dili)
+* **RDKit** (Biyoinformatik / Moleküler Modelleme)
+* **Scikit-learn** (Makine Öğrenmesi Algoritmaları)
+* **Pandas & NumPy** (Veri Analizi)
+
+---
+*Bu proje, Tübitak ve akademik çalışmalar kapsamında Biyoinformatik alanındaki yetkinlikleri geliştirmek amacıyla hazırlanmıştır.*
